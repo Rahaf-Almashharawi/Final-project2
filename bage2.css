@@ -308,11 +308,102 @@ section {
 }
 
 /* menu design */
-.our-menu {
+.menu {
     background: url(./img/our-menu-bg-1.png) left top no-repeat, url(./img/our-menu-bg-3.jpg);
 }
 
-.our-menu .menu-container {
+.menus {
+    display: flex;
+    justify-content: space-between;
+    color: #cdaa7c;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    flex-basis: 32%;
+}
+
+.title {
+    background-color: #cdaa7c;
+    color: #181818;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.title:hover {
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.single-menu {
+    background-color: #00000045;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    transition: .3s;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 0 0 #cdaa7c;
+}
+
+.single-menu:hover {
+    border-radius: 20px;
+}
+
+.single-menu span {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #cdaa7c;
+    color: #333;
+    padding: 8px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px 0 0 0;
+}
+
+.single-menu img {
+    min-width: 80px;
+    padding: 3px;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+.single-menu:hover {
+    border: 1px solid #cdaa7c;
+}
+
+.single-menu h4 {
+    border-bottom: 1px dashed #ddd;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 23px;
+}
+
+.single-menu a {
+    display: inline-block;
+    color: #cdaa7c;
+    text-transform: uppercase;
+    margin-top: 25px;
+    border-bottom: 1px dashed #cdaa7c;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .our-menu .menu-container {
     padding: 3rem 0;
     display: list-item;
 
@@ -365,7 +456,7 @@ section {
 
 .our-menu .menu-container .item .item-menu ul li a {
     color: #b9b9b9;
-}
+} */
 
 /* section two design */
 .our-chef {
