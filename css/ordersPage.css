@@ -1,0 +1,13 @@
+body {
+	text-align: center;
+}
+
+.orders div {
+	display: flex;
+	justify-content: space-around;
+}
+
+.orders-titles {
+	display: flex;
+	justify-content: space-around;
+}

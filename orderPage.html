@@ -4,11 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./css/ordersPage.css">
+  <title>Order Page</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </head>
 
 <body>
 
+  <h1>Your Orders</h1>
+  <br>
+  <h2>Total Price: $<span id="total-price">0.00</span></h2>
+
+  <button class="approve-order-btn">Approve Order</button>
+  <br><br><br>
+
+  <div class="orders-titles">
+    <h3>Order Name</h3>
+    <h3>Order Price</h3>
+    <h3>Order Count</h3>
+  </div>
+  <hr>
+  <div id="orders" class="orders"></div>
+
+
+  <script src="./javascript/orderPage.js"></script>
 </body>
 
 </html>
