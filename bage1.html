@@ -24,19 +24,25 @@
                 </ul>
             </div>
             <div ng-app ng-init="checked = false">
-                <form class="form-signin" action="" method="post" name="form">
+                <form class="form-signin" action="./bage2.html" name="form" onsubmit="return onSubmit()">
                     <label for="fullname">Full name</label>
-                    <input class="form-styling" type="email" name="username" required />
+                    <input class="form-styling" type="text" name="username" required />
                     <label for="password">Password</label>
                     <input class="form-styling" type="password" name="password" required />
                     <input type="checkbox" id="checkbox" />
                     <label for="checkbox"><span class="ui"></span>Keep me signed in</label>
                     <div class="btn-animate">
-                        <a href="./bage2.html" class="btn-signin" target="_blank" id="Log">Login to your account</a>
+                        <input class="btn-signin" id="Log" type="submit" style="cursor: pointer;">
                     </div>
-                    <!-- ----- -->
                 </form>
-                <form class="form-signup" action="" method="post" name="form">
+
+                <script>
+                    function onSubmit() {
+                        window.history.replaceState({}, document.title, window.location.href);
+                        return true;
+                    }
+                </script>
+                <form class="form-signup" action="" name="form">
                     <label for="fullname">Full name</label>
                     <input class="form-styling" type="text" name="text" />
                     <label for="email">Email</label>
